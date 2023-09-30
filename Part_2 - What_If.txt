@@ -1,0 +1,9 @@
+Well, first of all, probably the simplest solution is to launch multiple copies of the application and use a load balancer
+ to evenly distribute the load among the applications. There is, of course, an idea (it may sound a bit naive) but to extract
+ the URL generation mechanism into a separate microservice and establish asynchronous communication through some message
+ broker (Kafka, RabbitMQ). In response, provide the user with a task ID through a GET request, to which they can retrieve
+ the result or receive a message that the operation is in progress.
+
+Regarding the database, perhaps the best way is sharding and partitioning. Divide shards based on user IDs from and to,
+and partitions, accordingly, by dates. How much data needs to be stored? Statistics will help here, such as how many
+requests a user has for full URLs in the past month or another period.
