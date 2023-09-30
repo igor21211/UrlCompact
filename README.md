@@ -8,3 +8,5 @@ Simple App
   api/v1/regenerate - Back full URLs from short URLs.
  
   api/v1/regenerateCompact - Dont like your short url? this end point generate new short url from your full url
+
+#Answer for Part 2 - What If in Part_2 - What_If.txt 
