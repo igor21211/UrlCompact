@@ -49,7 +49,7 @@ public class UrlCustomService {
     }
 
     private  String generateCompactUrl(){
-        String baseUrl = "http://url.co/";
+        String baseUrl = "http://url.ci/";
         String randomUrlPartTwo = RandomStringUtils.randomAlphabetic(3).toLowerCase();
         return baseUrl+randomUrlPartTwo;
     }
