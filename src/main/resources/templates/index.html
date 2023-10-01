@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Url Compact</title>
+    <link th:rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Url Compact</h1>
+<div class="tabs">
+    <div class="tabs-inputs">
+    <button class="tab-btn-1" style="width: 100px">Generate Compact</button>
+    <button class="tab-btn-2" style="width: 100px">Return Full Url</button>
+    </div>
+    <div class="full-url active">
+        <input type="text" class="text-full-url"><button type="submit" class="btn-full-url">Generate Compact</button>
+    </div>
+    <div class="compact-url">
+        <input type="text" class="text-compact-url"><button type="submit" class="btn-compact-url">Return Full Url</button>
+    </div>
+    <div style="display: flex; justify-content: space-between">
+        <h2 class="result-full"></h2>
+        <h2 class="result-compact"></h2>
+    </div>
+</div>
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</body>
+</html>
