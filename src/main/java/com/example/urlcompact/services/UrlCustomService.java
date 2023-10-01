@@ -49,10 +49,9 @@ public class UrlCustomService {
     }
 
     private  String generateCompactUrl(){
-        String baseUrl = "http://";
-        String randomUrlPart = RandomStringUtils.randomAlphabetic(3).toLowerCase();
+        String baseUrl = "http://url.co/";
         String randomUrlPartTwo = RandomStringUtils.randomAlphabetic(3).toLowerCase();
-        return baseUrl+randomUrlPart+"/"+randomUrlPartTwo;
+        return baseUrl+randomUrlPartTwo;
     }
 
     public UrlDto regenerateCompactUrl(String fullUrl){
